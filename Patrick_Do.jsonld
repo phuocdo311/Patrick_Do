@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Patrick_Do",
+    "motivations": "To have a voice and also be a voice of others who I will be representing, especially those in Vietnamese communities in different countries. ",
+    "objectives": "I believe everyone should have a voice and that voice should be heard. Cardano gives us a lifetime opportunity to execute this privilege and also to actively participate in governmental actions through communities. This is a step by step process and a journey of learning new better things which I am committed to.  ",
+    "paymentAddress": "addr1q9vvcl24hmj3m05eykew6c0q6gj8q5cx9fqpv0440k9tnp2jyq0mp39nwc4gcynv56haduz5znm4s7kf7458qd96jt0qt07vhy",
+    "qualifications": "Commitment to the growing of Cardano blockchain.\nBachelor degrees in Architecture and Science in both Vietnam and USA\nReal Estate knowledge to contribute to Market and Real Time Tokenized Assets.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Twitter",
+        "uri": "https://x.com/DaDaMonkey1980"
+      },
+      {
+        "@type": "Identity",
+        "label": "Twitter",
+        "uri": "https://x.com/DaDaMonkey1980"
+      }
+    ]
+  }
+}
